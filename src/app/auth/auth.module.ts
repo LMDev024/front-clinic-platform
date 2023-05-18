@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 
-import { PasswordModule } from 'primeng/password';
-import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
+
+import { MenubarModule } from 'primeng/menubar';
+
 import { HeaderAuthComponent } from './components/header-auth/header-auth.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 
@@ -16,9 +16,7 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
   ],
   imports: [
     CommonModule,
-    ButtonModule,
-    InputTextModule,
-    PasswordModule
+    MenubarModule
   ],
   exports:[
     LoginPageComponent,
