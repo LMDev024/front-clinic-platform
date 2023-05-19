@@ -2,21 +2,23 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 
-
-import { MenubarModule } from 'primeng/menubar';
+import { GalleriaModule } from 'primeng/galleria';
 
 import { HeaderAuthComponent } from './components/header-auth/header-auth.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import { CarouselComponent } from './pages/landing-page/components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
     LoginPageComponent,
     HeaderAuthComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    CarouselComponent
   ],
   imports: [
     CommonModule,
-    MenubarModule
+    GalleriaModule
+
   ],
   exports:[
     LoginPageComponent,
