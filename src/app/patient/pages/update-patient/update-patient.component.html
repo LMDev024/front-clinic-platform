@@ -1,0 +1,45 @@
+<app-header-patient></app-header-patient>
+
+<div class="row pt-3">
+  <div class="col-md-">
+    <!-- Espacio para la imagen del perfil -->
+
+  </div>
+  <div class="col-md-6">
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="primerNombre">Primer Nombre</label>
+            <input type="text" class="form-control" id="primerNombre" [(ngModel)]="primerNombre" name="primerNombre">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="segundoNombre">Segundo Nombre</label>
+            <input type="text" class="form-control" id="segundoNombre" [(ngModel)]="segundoNombre" name="segundoNombre">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="primerApellido">Primer Apellido</label>
+            <input type="text" class="form-control" id="primerApellido" [(ngModel)]="primerApellido" name="primerApellido">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="segundoApellido">Segundo Apellido</label>
+            <input type="text" class="form-control" id="segundoApellido" [(ngModel)]="segundoApellido" name="segundoApellido">
+          </div>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col text-center">
+          <button type="submit" class="btn btn-primary">Actualizar Datos</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

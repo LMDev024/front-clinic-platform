@@ -1,6 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
+
 body {
   font-family: var(--font-family);
+}
+.btn-custom {
+  background-color: #A6F734;
+}
+.header-custom {
+  background-color: #15ECDF;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.background-style {
+  background-color: #E1E1E1;
+}
+.form-custom {
+  width: 450px; /* Ajusta el valor según tus necesidades */
+  max-width: 100%; /* Ajusta el valor según tus necesidades */
+}
+.form-custom-register {
+  width: 1000px; /* Ajusta el valor según tus necesidades */
+  max-width: 100%; /* Ajusta el valor según tus necesidades */
 }

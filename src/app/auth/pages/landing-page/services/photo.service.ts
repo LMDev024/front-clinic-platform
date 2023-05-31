@@ -9,7 +9,7 @@ export class PhotoService {
           {
             itemImageSrc: '../../../../../assets/carousel-deal.jpg',
             alt: '¿Sabías que los especialistas que firman un contrato con nosotros se adhieren a una cláusula de ética?',
-            title: 'Compormetidos con tu salud'
+            title: 'Comprometidos con tu salud'
         },
         {
             itemImageSrc: '../../../../../assets/carousel-agendamiento.jpg',

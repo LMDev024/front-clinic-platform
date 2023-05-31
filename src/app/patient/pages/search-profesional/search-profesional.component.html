@@ -1,0 +1,66 @@
+<app-header-patient></app-header-patient>
+
+<div class="row pt-3">
+  <div class="col-8">
+    <!-- Resultados de búsqueda -->
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Resultados de búsqueda</h5>
+        <p *ngIf="profesionalesFiltrados.length === 0">No se encontraron resultados.</p>
+        <table *ngIf="profesionalesFiltrados.length > 0" class="table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Especialidad</th>
+              <th>Horario</th>
+              <th>Ubicación</th>
+              <th>Opción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let profesional of profesionalesFiltrados">
+              <td>{{ profesional.nombre }}</td>
+              <td>{{ profesional.apellido }}</td>
+              <td>{{ profesional.especialidad }}</td>
+              <td>{{ profesional.horario }}</td>
+              <td>{{ profesional.ubicacion }}</td>
+              <td>
+                <button class="btn btn-success btn-custom text-dark" >Agendar cita</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-4 bg bg-primary">
+    <!-- Formulario de búsqueda -->
+    <form class="mb-3" (submit)="buscarProfesionales($event)">
+      <div class="form-group mb-3">
+        <label for="especialidad" class="form-label text-white col-form-label-sm">Especialidad</label>
+        <select class="form-control form-control-sm" id="especialidad">
+          <option value="">Seleccionar especialidad</option>
+          <option *ngFor="let especialidad of getUniqueValues('especialidad')" [value]="especialidad">{{ especialidad }}</option>
+        </select>
+      </div>
+      <div class="form-group mb-3">
+        <label for="ubicacion" class="form-label text-white col-form-label-sm">Ubicación</label>
+        <select class="form-control form-control-sm" id="ubicacion">
+          <option value="">Seleccionar ubicación</option>
+          <option *ngFor="let ubicacion of getUniqueValues('ubicacion')" [value]="ubicacion">{{ ubicacion }}</option>
+        </select>
+      </div>
+      <div class="form-group mb-3">
+        <label for="horario" class="form-label text-white col-form-label-sm">Horario de atención</label>
+        <select class="form-control form-control-sm" id="horario">
+          <option value="">Seleccionar horario de atención</option>
+          <option *ngFor="let horario of getUniqueValues('horario')" [value]="horario">{{ horario }}</option>
+        </select>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-success btn-custom text-dark">Buscar</button>
+      </div>
+    </form>
+  </div>
+</div>

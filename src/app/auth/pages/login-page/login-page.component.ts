@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class LoginPageComponent {
 
+  public esProfesional:boolean = false
 }

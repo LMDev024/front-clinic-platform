@@ -1,17 +1,42 @@
-
-<auth-header></auth-header>
-
-<div class="container">
-  <div class="row">
-    <h2 class="col-6">Inicio de sesión</h2>
+<div class="row">
+  <div class="col-3  bg-dark text-light pt-2 cursor-pointer">
+      <span class="d-block"><i>Salud Intercomunicada</i></span>
+      <small class="d-block mx-3 mb-2 text-sm"><i>al alcance de unos pocos clics</i></small>
   </div>
-  <form class="row">
-    <div class="col-7 col-offset-4">
-      <div class="col-3 " >
-        <input pInputText id="username"class="w-full "  placeholder="correo electronico"  />
-      </div>
-
-      <!---->
-    </div>
-  </form>
+  <div class="col-6  pt-2 header-custom text-center">
+        <h4>Modulo de ingreso Salud Intercomunidad!</h4>
+  </div>
+  <div class="col-3  pt-2 header-custom text-center">
+    <button type="button" class="btn btn-success  btn-custom mx-3 float-end text-dark" value="registrarse">Registrarse</button>
+  </div>
 </div>
+
+
+<div class="row pt-5">
+  <div class="col-12 d-flex align-items-center justify-content-center">
+    <form class="p-5 header-custom form-custom">
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control w-100" id="email" placeholder="Ingresa tu correo electrónico">
+      </div>
+      <div class="mb-4">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control w-100" id="password" placeholder="Ingresa tu contraseña">
+        <small class="form-text text-muted">¿Olvidaste tu contraseña?</small>
+      </div>
+      <div class="d-flex align-items-center mb-3">
+        <p-inputSwitch [(ngModel)]="esProfesional"></p-inputSwitch>
+        <span class="ml-2 mx-2">Profesional</span>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-success btn-custom text-dark">Iniciar sesión</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
