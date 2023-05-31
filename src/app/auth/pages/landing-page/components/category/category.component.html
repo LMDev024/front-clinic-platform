@@ -7,7 +7,7 @@
   </div>
 </div>
 <div class="row background-style pt-5 mx-3 ">
-  <div class="col-6 cursor-pointer" *ngFor="let especialidad of especialidades">
+  <div class="col-6 cursor-pointer" *ngFor="let especialidad of especialidades" routerLink="/login">
     <div class="card mb-3" style="max-width: 540px;">
       <div class="row g-0">
         <div class="col-md-2">
@@ -24,6 +24,8 @@
 </div>
 <div class="row pb-4">
   <div class="col-12 d-flex justify-content-center">
-    <button class="btn btn-success btn-custom text-dark btn-lg">Buscar mas...</button>
+    <button class="btn btn-success btn-custom text-dark btn-lg" routerLink="/login">Buscar mas...</button>
   </div>
 </div>
+<router-outlet></router-outlet>
+

@@ -151,6 +151,8 @@ export class SearchProfesionalComponent {
       return true;
     });
   }
-
+  agendarCita(){
+    alert('Cita agendada!')
+  }
 
 }

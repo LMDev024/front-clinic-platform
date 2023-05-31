@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-3 bg-dark text-light pt-2 cursor-pointer" routerLink="/search">
+    <span class="d-block"><i>Salud Intercomunicada</i></span>
+    <small class="d-block mx-3 mb-2 text-sm"><i>al alcance de unos pocos clics</i></small>
+  </div>
+  <div class="col-9 pt-2 header-custom">
+    <button type="button" class="btn btn-success btn-custom mx-3 float-end text-dark" routerLink="/update">Username Patient</button>
+    <button type="button" class="btn btn-success btn-custom mx-3 float-end text-dark" routerLink="/search">Buscar Profesionales</button>
+  </div>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Fecha de Cita</th>
+      <th scope="col">Hora de Cita</th>
+      <th scope="col">Nombre del Especialista</th>
+      <th scope="col">Costo</th>
+      <th scope="col">Estado de la Cita</th>
+      <th scope="col">Opción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cita of citas">
+      <th scope="row">{{ cita.numero }}</th>
+      <td>{{ cita.fecha }}</td>
+      <td>{{ cita.hora }}</td>
+      <td>{{ cita.especialista }}</td>
+      <td>{{ cita.costo }}</td>
+      <td>{{ cita.estado }}</td>
+      <td>
+        <button type="button" class="btn btn-primary" routerLink="/roomcita">Ir a Cita</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<router-outlet></router-outlet>

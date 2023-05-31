@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'; // Importa FormsModule
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms'; // Importa FormsModule
 
 import { CommonModule } from '@angular/common';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
@@ -14,6 +14,9 @@ import { CalificacionComponent } from './pages/landing-page/components/calificac
 import { RatingModule } from 'primeng/rating';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { RegisterComponent } from './pages/register-page/register/register.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { RouterModule } from '@angular/router';
+import { ToastModule } from 'primeng/toast';
 @NgModule({
   declarations: [
     LoginPageComponent,
@@ -29,7 +32,11 @@ import { RegisterComponent } from './pages/register-page/register/register.compo
     GalleriaModule,
     RatingModule,
     FormsModule,
-    InputSwitchModule
+    InputSwitchModule,
+    AppRoutingModule,
+    RouterModule,
+    ReactiveFormsModule,
+    ToastModule
   ],
   exports:[
     LoginPageComponent,

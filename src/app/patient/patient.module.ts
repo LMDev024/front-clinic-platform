@@ -4,6 +4,10 @@ import { SearchProfesionalComponent } from './pages/search-profesional/search-pr
 import { HeaderPatientComponent } from './components/header-patient/header-patient.component';
 import { UpdatePatientComponent } from './pages/update-patient/update-patient.component';
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from '../app-routing.module';
+import { RouterModule } from '@angular/router';
+import { CitaComponent } from './pages/cita/cita.component';
+import { RoomCitaComponent } from './pages/room-cita/room-cita.component';
 
 
 
@@ -11,11 +15,15 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     SearchProfesionalComponent,
     HeaderPatientComponent,
-    UpdatePatientComponent
+    UpdatePatientComponent,
+    CitaComponent,
+    RoomCitaComponent
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,
+    RouterModule
   ],
   exports:[
     SearchProfesionalComponent,

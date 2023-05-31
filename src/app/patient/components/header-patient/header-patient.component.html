@@ -1,12 +1,12 @@
 <div class="row">
-  <div class="col-3 bg-dark text-light pt-2 cursor-pointer">
+  <div class="col-3 bg-dark text-light pt-2 cursor-pointer" routerLink="/search">
     <span class="d-block"><i>Salud Intercomunicada</i></span>
     <small class="d-block mx-3 mb-2 text-sm"><i>al alcance de unos pocos clics</i></small>
   </div>
   <div class="col-9 pt-2 header-custom">
-    <button type="button" class="btn btn-success btn-custom mx-3 float-end text-dark">Username Patient</button>
-    <button type="button" class="btn btn-success btn-custom mx-3 float-end text-dark">Ver citas vigentes</button>
-
+    <button type="button" class="btn btn-success btn-custom mx-3 float-end text-dark" routerLink="/update">Username Patient</button>
+    <button type="button" class="btn btn-success btn-custom mx-3 float-end text-dark" routerLink="/listcita">Ver citas vigentes</button>
   </div>
 
 </div>
+<router-outlet></router-outlet>
